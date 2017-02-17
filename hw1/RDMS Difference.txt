@@ -1,0 +1,28 @@
+1.Data type difference:
+Numeric
+- MySQL and SQLServer have INT and NUMERIC(p, s).
+- Oracle has NUMBER(p, s).
+
+Character
+- All three RDMS have CHAR and VARCHAR.
+- Particularly, Oracle has VARCHAR2 synonymous with VARCHAR, but VARCHAR2 is perferred.
+
+2.Syntax perference:
+Generally, in MySQL, constraints like PRIMARY KEY, FOREIGN KEY or UNIQUE are put seperately from attribute definition. But in Oracle or SQLServer, they are usually combined in the definition.
+
+3.DDL difference:
+It's the same to CREATE/DROP a table or ALTER ADD/DROP a colomn in 3 RDMS.
+
+To change the data type of a column in a table:
+- MySQL 
+  ALTER TABLE table_name
+  MODIFY COLUMN column_name datatype
+
+- Oracle
+  ALTER TABLE table_name
+  MODIFY column_name datatype
+  
+- SQLServer
+  ALTER TABLE table_name
+  ALTER COLUMN column_name datatype
+
