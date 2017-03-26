@@ -1,0 +1,55 @@
+ProductName,SupplierID,CategoryID,Price
+Chais,1,1,18
+Chang,1,1,19
+Aniseed Syrup,1,2,10
+Chef Anton's Cajun Seasoning,2,2,22
+Chef Anton's Gumbo Mix,2,2,21.35
+Grandma's Boysenberry Spread,3,2,25
+Uncle Bob's Organic Dried Pears,3,7,30
+Northwoods Cranberry Sauce,3,2,40
+Mishi Kobe Niku,4,6,97
+Ikura,4,8,31
+Konbu,6,8,6
+Tofu,6,7,23.25
+Genen Shouyu,6,2,15.5
+Pavlova,7,3,17.45
+Alice Mutton,7,6,39
+Carnarvon Tigers,7,8,62.5
+Teatime Chocolate Biscuits,8,3,9.2
+Sir Rodney's Marmalade,8,3,81
+Sir Rodney's Scones,8,3,10
+NuNuCa Nub-Nougat-Creme,11,3,14
+Gumbar Gummibarchen,11,3,31.23
+Schoggi Schokolade,11,3,43.9
+Rossle Sauerkraut,12,7,45.6
+Thuringer Rostbratwurst,12,6,123.79
+Gorgonzola Telino,14,4,12.5
+Mascarpone Fabioli,14,4,32
+Geitost,15,4,2.5
+Sasquatch Ale,16,1,14
+Steeleye Stout,16,1,18
+Inlagd Sill,17,8,19
+Gravad lax,17,8,26
+Singaporean Hokkien Fried Mee,20,5,14
+Ipoh Coffee,20,1,46
+Gula Malacca,20,2,19.45
+Maxilaku,23,3,20
+Valkoinen suklaa,23,3,16.25
+Manjimup Dried Apples,24,7,53
+Filo Mix,24,5,7
+Perth Pasties,24,6,32.8
+Vegie-spread,7,2,43.9
+Wimmers gute Semmelknodel,12,5,33.25
+Louisiana Fiery Hot Pepper Sauce,2,2,21.05
+Louisiana Hot Spiced Okra,2,2,17
+Laughing Lumberjack Lager,16,1,14
+Scottish Longbreads,8,3,12.5
+Gudbrandsdalsost,15,4,36
+Outback Lager,7,1,15
+Flotemysost,15,4,21.5
+Mozzarella di Giovanni,14,4,34.8
+Rod Kaviar,17,8,15
+Longlife Tofu,4,7,10
+Rhonbrau Klosterbier,12,1,7.75
+Lakkalikoori,23,1,18
+Original Frankfurter grune Sobe,12,2,13
