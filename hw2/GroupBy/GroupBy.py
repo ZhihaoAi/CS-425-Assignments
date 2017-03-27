@@ -1,11 +1,11 @@
 '''
 SELECT 	    SupplierID, CategoryID, COUNT(*)
-FROM 		products
+FROM 		Products
 GROUP BY 	SupplierID, CategoryID
 HAVING 	    COUNT(*) > 2;
 '''
 
-def Groupby(SELECT, GROUPBY, input='p1in.csv', output='p1out.csv'):
+def Groupby(SELECT, GROUPBY, input='Products.csv', output='GroupByOutput.csv'):
     p1in = open(input, "r")
     p1out = open(output, "w")
 
@@ -22,10 +22,8 @@ def Groupby(SELECT, GROUPBY, input='p1in.csv', output='p1out.csv'):
             grporder.append(x)
         grps[x].append(row)
 
-    # SELECT SupplierID, CategoryID, COUNT(*)
     p1out.write(','.join(SELECT) + '\n')
     for g in grporder:
-        # HAVING COUNT(*) > 2
         if len(grps[g]) > 2:
             p1out.write(','.join(g))
             if 'COUNT(*)' in SELECT:

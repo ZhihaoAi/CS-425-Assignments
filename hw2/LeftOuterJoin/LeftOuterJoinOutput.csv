@@ -1,0 +1,5 @@
+{'Name': 'Harry', 'DeptName': 'Finance', 'Manager': 'Null', 'EmpId': '3415'}
+{'Name': 'Sally', 'DeptName': 'Sales', 'Manager': 'Harriet', 'EmpId': '2241'}
+{'Name': 'George', 'DeptName': 'Finance', 'Manager': 'Null', 'EmpId': '3401'}
+{'Name': 'Harriet', 'DeptName': 'Sales', 'Manager': 'Harriet', 'EmpId': '2202'}
+{'Name': 'Tim', 'DeptName': 'Executive', 'Manager': 'Null', 'EmpId': '1123'}

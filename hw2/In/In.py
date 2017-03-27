@@ -1,21 +1,20 @@
 '''
 SELECT 	    ProductName, SupplierID, CategoryID, Price
-FROM 		products
+FROM 		Products
 WHERE       SupplierID in
             (SELECT     SupplierID
-            FROM        products
+            FROM        Products
             GROUP BY    SupplierID
             HAVING 	    COUNT(*) > 2);
 '''
 
-from p1 import *
-def In(SELECT, prds='p1in.csv', input='p2in.csv', output='p2out.csv'):
+def In(SELECT, prds='Products.csv', input='SupplierIDs.csv', output='InOutput.csv'):
     products = open(prds, 'r')
     p2in = open(input, "r")
     p2out = open(output, "w")
 
     attr = products.readline().split(',')
-    where = p2in.readline().strip() # where = SupplierID
+    where = p2in.readline().strip()
     whereidx = attr.index(where)
     idx = tuple(map(attr.index, SELECT))
     enum = tuple(map(str.strip, p2in.readlines()))
@@ -27,5 +26,5 @@ def In(SELECT, prds='p1in.csv', input='p2in.csv', output='p2out.csv'):
             x = tuple(row[i] for i in idx)
             p2out.write(','.join(x) + '\n')
 
-Groupby(SELECT=('SupplierID',), GROUPBY=('SupplierID',), output='p2in.csv')
+# Groupby(SELECT=('SupplierID',), GROUPBY=('SupplierID',), output='SupplierIDs.csv')
 In(SELECT=('ProductName', 'SupplierID', 'CategoryID', 'Price'))
